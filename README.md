@@ -1,7 +1,7 @@
 # CNN Image Classifier: Dog or Cat
 This repository contains a Jupyter Notebook implementing a Convolutional Neural Network (CNN) to classify images of cats and dogs. The project is built with Python and TensorFlow, demonstrating end-to-end steps from data preprocessing to model training, evaluation, and predictions.
 
-### Project Overview
+## Project Overview
 This project uses a CNN to classify 100x100 RGB images of cats and dogs. The notebook walks through:
 1. **Data Preparation**: loading and normalizing image data.
 2. **Data Visualization**: displaying samples from the training data.
@@ -10,7 +10,7 @@ This project uses a CNN to classify 100x100 RGB images of cats and dogs. The not
 5. **Evaluation**: testing the model's accuracy with the test set.
 6. **Making Predictions**: running the trained model on test samples and displaying the results.
 
-### Dependencies
+## Dependencies
 - Python 3.x
 - NumPy
 - Matplotlib
@@ -18,7 +18,7 @@ This project uses a CNN to classify 100x100 RGB images of cats and dogs. The not
 Install the dependencies with:
 ```pip install numpy matplotlib tensorflow```
 
-### Dataset
+## Dataset
 The dataset should include the following files:
 - `data/input.csv`: Training image pixel data (flattened).
 - `data/labels.csv`: Labels for the training data (0 for dog, 1 for cat).
@@ -26,7 +26,7 @@ The dataset should include the following files:
 - `data/labels_test.csv`: Labels for the test data.
 Each Image in the dataset should be resized to 100x100 pixels and represented in RGB format.
 
-### How to Run
+## How to Run
 1. Clone the repository:
 ```
 git clone https://github.com/your-username/cnn-image-classifier.git
@@ -40,7 +40,7 @@ jupyter notebook cnn_image_classifier.ipynb
 ```
 4. Run the cells sequentially to train the model, evaluate it, and make predictions.
 
-### Model Architecture
+## Model Architecture
 - **Input Layer**: 100x100 RGB images.
 - **Convolutional Layers**: Two Conv2D layers with ReLU activation.
 - **Pooling Layers**: Two MaxPooling2D layers for down-sampling.
@@ -50,14 +50,14 @@ jupyter notebook cnn_image_classifier.ipynb
 - **Optimizer**: Adam.
 - **Loss Function**: Binary Cross-Entropy.
 
-### Example Output
+## Example Output
 After running the notebook, the model predicts whether a given image is a cat or a dog with confidence scores. Example output:
 ```
 Prediction: Cat
 Confidence: 0.9876
 ```
 
-### Further Improvement Options
+## Further Improvement Options
 - **Data AUgmentation**: Improve generalization by augmenting training data.
 - **Hyperparameter Tuning**: Experiment with learning rates, batch sizes, and layer configurations. With about an hour of playing around, I couldn't get the accuracy higher than ~72%. I think more data is most important for improving it further.
 - **Transfer Learning**: Use pre-trained models for better performance on small datasets.
